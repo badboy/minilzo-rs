@@ -192,7 +192,7 @@ impl ::std::default::Default for Union_Unnamed4 {
     fn default() -> Self { unsafe { ::std::mem::zeroed() } }
 }
 pub type __lzo_pu32_u = Union_Unnamed4;
-#[link(name = "minilzo")]
+#[link(name = "lzo2")]
 extern "C" {
     pub static mut lzo_cta__0: [::libc::c_int; 1usize];
     pub static mut lzo_cta__1: [::libc::c_int; 1usize];
@@ -251,7 +251,7 @@ extern "C" {
     pub static mut lzo_cta__54: [::libc::c_int; 1usize];
     pub static mut lzo_cta__55: [::libc::c_int; 1usize];
 }
-#[link(name = "minilzo")]
+#[link(name = "lzo2")]
 extern "C" {
     pub fn __lzo_init_v2(arg1: ::libc::c_uint, arg2: ::libc::c_int,
                          arg3: ::libc::c_int, arg4: ::libc::c_int,
