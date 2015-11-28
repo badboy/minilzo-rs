@@ -1,3 +1,22 @@
+//! LZO is a compression library with focus on decompression speed.
+//! minilzo is a lightweight subset of the full LZO library.
+//!
+//! It is available [online](http://www.oberhumer.com/opensource/lzo/#minilzo).
+//!
+//! This rust library is a wrapper around the minilzo library
+//! and is fully compatible with LZO/minilzo compressed data.
+//!
+//! # Basic Operation
+//!
+//! ```rust,no_run
+//! # use minilzo;
+//! let data = b"foobar";
+//!
+//! let compressed = minilzo::compress(&data[..]).unwrap();
+//!
+//! let decompressed = minilzo::decompress(&compressed, data.len()).unwrap();
+//! ```
+
 extern crate minilzo_sys;
 extern crate libc;
 
@@ -20,6 +39,10 @@ use minilzo_sys::{
     lzo1x_decompress_safe,
 };
 
+/// Errors of Compression or Decompression
+///
+/// These are the same as minilzo returns,
+/// just nicely wrapped as an enum.
 #[derive(Debug, PartialEq)]
 pub enum Error {
     Error,
@@ -74,6 +97,15 @@ fn _lzo_init() -> i32 {
     }
 }
 
+/// Compress the given data, if possible.
+/// An error will be returned if compression fails.
+///
+/// Example
+///
+/// ```rust
+/// let data = b"foobar";
+/// let compressed = minilzo::compress(&data[..]);
+/// ```
 pub fn compress(indata: &[u8]) -> Result<Vec<u8>, Error> {
     let mut wrkmem : [u8; LZO1X_1_MEM_COMPRESS] = unsafe {
         std::mem::uninitialized()
@@ -104,6 +136,21 @@ pub fn compress(indata: &[u8]) -> Result<Vec<u8>, Error> {
     }
 }
 
+/// Decompress the given data, if possible.
+/// An error will be returned if decompression fails.
+///
+/// The length of the output buffer can be specified.
+/// If the output buffer is not large enough to hold the decompressed data,
+/// a `OutputOverrun` is returned.
+///
+/// If an error in the compressed data is detected, a minilzo error is returned.
+///
+/// Example:
+///
+/// ```rust,no_run
+/// let data = b"[your-compressed-data]";
+/// let decompressed = minilzo::decompress(&data[..], 100);
+/// ```
 pub fn decompress(indata: &[u8], newlen: usize) -> Result<Vec<u8>, Error> {
     let inlen = indata.len();
     let mut outdata = Vec::with_capacity(newlen);
