@@ -127,7 +127,22 @@ pub fn decompress(indata: &[u8], newlen: usize) -> Result<Vec<u8>, Error> {
 
 #[test]
 fn init() {
+    // We test this, but we don't export it to the user right now
     assert_eq!(0, _lzo_init());
+}
+
+#[test]
+fn test_compress_skips_short() {
+    assert_eq!(Err(Error::NotCompressible), compress("foo".as_bytes()));
+}
+
+#[test]
+fn test_compress_fails_with_short_output() {
+    let data = [0; 128*1024];
+    let compressed = compress(&data[..]).unwrap();
+
+    assert_eq!(Err(Error::OutputOverrun),
+               decompress(&compressed, 128));
 }
 
 #[test]
@@ -139,4 +154,31 @@ fn simple_compress_decompress() {
 
     let decompressed = decompress(&compressed, 128*1024).unwrap();
     assert_eq!(128*1024, decompressed.len());
+}
+
+#[test]
+fn test_compress_decompress_lorem_round() {
+    let lorem = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod \
+                 tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At \
+                 vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, \
+                 no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit \
+                 amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut \
+                 labore et dolore magna aliquyam erat, sed diam voluptua.";
+
+    let compressed = compress(lorem.as_bytes()).unwrap();
+    let decompressed = decompress(&compressed, lorem.len()).unwrap();
+
+    assert_eq!(lorem.len(), decompressed.len());
+    assert_eq!(lorem.as_bytes(), &decompressed[..]);
+}
+
+#[test]
+fn test_alice_wonderland_both() {
+    let alice = "\r\n\r\n\r\n\r\n                ALICE'S ADVENTURES IN WONDERLAND\r\n";
+
+    let compressed = compress(alice.as_bytes()).unwrap();
+    let decompressed = decompress(&compressed, alice.len()).unwrap();
+
+    assert_eq!(alice.len(), decompressed.len());
+    assert_eq!(alice.as_bytes(), &decompressed[..]);
 }
