@@ -1,0 +1,10 @@
+[package]
+authors = ["Jan-Erik Rediger <janerik@fnordig.de>"]
+name = "minilzo"
+version = "0.1.0"
+
+[dependencies]
+libc = "0.2.2"
+
+[dependencies.minilzo-sys]
+path = "minilzo-sys"
