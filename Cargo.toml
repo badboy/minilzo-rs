@@ -21,6 +21,4 @@ include = [
 
 [dependencies]
 libc = "0.2.2"
-
-[dependencies.minilzo-sys]
-path = "minilzo-sys"
+minilzo-sys = "0.1.0"
