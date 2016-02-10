@@ -3,6 +3,22 @@ authors = ["Jan-Erik Rediger <janerik@fnordig.de>"]
 name = "minilzo"
 version = "0.1.0"
 
+description = "A wrapper around the portable lossless data compression library"
+keywords = ["compression"]
+
+repository = "https://github.com/badboy/minilzo-rs"
+homepage = "https://github.com/badboy/minilzo-rs"
+documentation = "http://badboy.github.io/minilzo-rs/"
+
+license = "MIT"
+
+include = [
+  "README.md",
+  "LICENSE",
+  "Cargo.toml",
+  "src/**/*",
+]
+
 [dependencies]
 libc = "0.2.2"
 

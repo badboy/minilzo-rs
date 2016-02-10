@@ -1,5 +1,7 @@
 # minilzo-rs - A wrapper around minilzo, the lightweight subset of the LZO library
 
+[![Build Status](https://travis-ci.org/badboy/minilzo.svg?branch=master)](https://travis-ci.org/badboy/minilzo)
+[![crates.io](http://meritbadge.herokuapp.com/minilzo)](https://crates.io/crates/minilzo)
 
 LZO is a compression library with focus on decompression speed.
 originally implemented by Markus F.X.J. Oberhumer.
@@ -43,3 +45,8 @@ Run benchmarks with:
 ```
 cargo bench
 ```
+
+## License
+
+The `minilzo-rs` wrapper library is licensed under the terms of the [MIT License](LICENSE).  
+LZO itself is licensed under the terms of the [GNU General Public License](http://www.oberhumer.com/opensource/gpl.html) (GPL v2+).

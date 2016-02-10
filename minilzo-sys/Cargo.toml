@@ -3,5 +3,21 @@ name = "minilzo-sys"
 version = "0.1.0"
 authors = ["Jan-Erik Rediger <janerik@fnordig.de>"]
 
+description = "FFI bindings to minilzo"
+keywords = ["compression"]
+
+repository = "https://github.com/badboy/minilzo-rs"
+homepage = "https://github.com/badboy/minilzo-rs"
+documentation = "http://badboy.github.io/minilzo-rs/"
+
+license = "MIT"
+
+include = [
+  "README.md",
+  "LICENSE",
+  "Cargo.toml",
+  "src/**/*",
+]
+
 [dependencies]
 libc = "0.2.2"
