@@ -1,6 +1,6 @@
 # minilzo-rs - A wrapper around minilzo, the lightweight subset of the LZO library
 
-[![Build Status](https://travis-ci.org/badboy/minilzo.svg?branch=master)](https://travis-ci.org/badboy/minilzo)
+[![Build Status](https://travis-ci.org/badboy/minilzo-rs.svg?branch=master)](https://travis-ci.org/badboy/minilzo-rs)
 [![crates.io](http://meritbadge.herokuapp.com/minilzo)](https://crates.io/crates/minilzo)
 
 LZO is a compression library with focus on decompression speed.
