@@ -118,7 +118,7 @@ pub fn compress(indata: &[u8]) -> Result<Vec<u8>, Error> {
     unsafe {
         let r = lzo1x_1_compress(
             indata.as_ptr(),
-            inlen as u64,
+            inlen as lzo_uint,
             outdata.as_mut_ptr(),
             &outlen as *const _ as *mut _,
             wrkmem.as_mut_ptr() as *mut _);
@@ -158,7 +158,7 @@ pub fn decompress(indata: &[u8], newlen: usize) -> Result<Vec<u8>, Error> {
     unsafe {
         let r = lzo1x_decompress_safe(
             indata.as_ptr(),
-            inlen as u64,
+            inlen as lzo_uint,
             outdata.as_mut_ptr(),
             &newlen as *const _ as *mut _,
             ptr::null_mut());
