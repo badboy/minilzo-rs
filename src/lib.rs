@@ -124,10 +124,6 @@ pub fn compress(indata: &[u8]) -> Result<Vec<u8>, Error> {
             wrkmem.as_mut_ptr() as *mut _);
 
         if r == 0 {
-            if outlen > inlen {
-                return Err(Error::NotCompressible)
-            }
-
             outdata.set_len(outlen);
             return Ok(outdata)
         }
@@ -179,8 +175,14 @@ fn init() {
 }
 
 #[test]
-fn test_compress_skips_short() {
-    assert_eq!(Err(Error::NotCompressible), compress("foo".as_bytes()));
+fn test_compress_short() {
+let data = "foo".as_bytes();
+    let compressed = compress(data).unwrap();
+    assert_eq!(compressed.len(), 7);
+
+    let decompressed = decompress(&compressed, 3).unwrap();
+    assert_eq!(decompressed.len(), 3);
+    assert_eq!(decompressed, data);
 }
 
 #[test]
