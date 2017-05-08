@@ -81,6 +81,32 @@ impl Error {
     }
 }
 
+impl std::fmt::Display for Error {
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        write!(f, "{:?}", self)
+    }
+}
+
+impl std::error::Error for Error {
+    fn description(&self) -> &str {
+        match *self {
+            Error::OutOfMemory => "out of memory",
+            Error::NotCompressible => "not compressible",
+            Error::InputOverrun => "input overrun",
+            Error::OutputOverrun => "output overrun",
+            Error::LookbehindOverrun => "lookbehind overrun",
+            Error::EOFNotFound => "EOF not found",
+            Error::InputNotConsumed => "input not consumed",
+            Error::NotYetImplemented => "not yet implemented",
+            Error::InvalidArgument => "invalid argument",
+            Error::InvalidAlignment => "invalid alignment",
+            Error::OutputNotConsumed => "output not consumed",
+            Error::InternalError => "internal error",
+            Error::Error => "error",
+        }
+    }
+}
+
 fn _lzo_init() -> i32 {
     unsafe {
         __lzo_init_v2(lzo_version(),
