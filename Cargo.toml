@@ -1,7 +1,7 @@
 [package]
 authors = ["Jan-Erik Rediger <janerik@fnordig.de>"]
 name = "minilzo"
-version = "0.1.2"
+version = "0.2.0"
 
 description = "A wrapper around the portable lossless data compression library"
 keywords = ["compression"]
