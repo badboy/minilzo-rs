@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `minilzo_sys` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, minilzo_sys">
+
+    <title>minilzo_sys - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc mod">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'></p><script>window.sidebarCurrent = {name: 'minilzo_sys', ty: 'mod', relpath: '../'};</script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Crate <a class="mod" href=''>minilzo_sys</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../src/minilzo_sys/lib.rs.html#1-25' title='goto source code'>[src]</a></span></h1>
+<h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Struct_Unnamed1.html"
+                                  title='struct minilzo_sys::Struct_Unnamed1'>Struct_Unnamed1</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Struct_lzo_callback_t.html"
+                                  title='struct minilzo_sys::Struct_lzo_callback_t'>Struct_lzo_callback_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Union_Unnamed2.html"
+                                  title='struct minilzo_sys::Union_Unnamed2'>Union_Unnamed2</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Union_Unnamed3.html"
+                                  title='struct minilzo_sys::Union_Unnamed3'>Union_Unnamed3</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Union_Unnamed4.html"
+                                  title='struct minilzo_sys::Union_Unnamed4'>Union_Unnamed4</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='constants' class='section-header'><a href="#constants">Constants</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LZO1X_1_MEM_COMPRESS.html"
+                                  title='constant minilzo_sys::LZO1X_1_MEM_COMPRESS'>LZO1X_1_MEM_COMPRESS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LZO1X_MEM_COMPRESS.html"
+                                  title='constant minilzo_sys::LZO1X_MEM_COMPRESS'>LZO1X_MEM_COMPRESS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LZO_E_EOF_NOT_FOUND.html"
+                                  title='constant minilzo_sys::LZO_E_EOF_NOT_FOUND'>LZO_E_EOF_NOT_FOUND</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LZO_E_ERROR.html"
+                                  title='constant minilzo_sys::LZO_E_ERROR'>LZO_E_ERROR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LZO_E_INPUT_NOT_CONSUMED.html"
+                                  title='constant minilzo_sys::LZO_E_INPUT_NOT_CONSUMED'>LZO_E_INPUT_NOT_CONSUMED</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LZO_E_INPUT_OVERRUN.html"
+                                  title='constant minilzo_sys::LZO_E_INPUT_OVERRUN'>LZO_E_INPUT_OVERRUN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LZO_E_INTERNAL_ERROR.html"
+                                  title='constant minilzo_sys::LZO_E_INTERNAL_ERROR'>LZO_E_INTERNAL_ERROR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LZO_E_INVALID_ALIGNMENT.html"
+                                  title='constant minilzo_sys::LZO_E_INVALID_ALIGNMENT'>LZO_E_INVALID_ALIGNMENT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LZO_E_INVALID_ARGUMENT.html"
+                                  title='constant minilzo_sys::LZO_E_INVALID_ARGUMENT'>LZO_E_INVALID_ARGUMENT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LZO_E_LOOKBEHIND_OVERRUN.html"
+                                  title='constant minilzo_sys::LZO_E_LOOKBEHIND_OVERRUN'>LZO_E_LOOKBEHIND_OVERRUN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LZO_E_NOT_COMPRESSIBLE.html"
+                                  title='constant minilzo_sys::LZO_E_NOT_COMPRESSIBLE'>LZO_E_NOT_COMPRESSIBLE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LZO_E_NOT_YET_IMPLEMENTED.html"
+                                  title='constant minilzo_sys::LZO_E_NOT_YET_IMPLEMENTED'>LZO_E_NOT_YET_IMPLEMENTED</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LZO_E_OK.html"
+                                  title='constant minilzo_sys::LZO_E_OK'>LZO_E_OK</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LZO_E_OUTPUT_NOT_CONSUMED.html"
+                                  title='constant minilzo_sys::LZO_E_OUTPUT_NOT_CONSUMED'>LZO_E_OUTPUT_NOT_CONSUMED</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LZO_E_OUTPUT_OVERRUN.html"
+                                  title='constant minilzo_sys::LZO_E_OUTPUT_OVERRUN'>LZO_E_OUTPUT_OVERRUN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LZO_E_OUT_OF_MEMORY.html"
+                                  title='constant minilzo_sys::LZO_E_OUT_OF_MEMORY'>LZO_E_OUT_OF_MEMORY</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='statics' class='section-header'><a href="#statics">Statics</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__0.html"
+                                  title='static minilzo_sys::lzo_cta__0'>lzo_cta__0</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__1.html"
+                                  title='static minilzo_sys::lzo_cta__1'>lzo_cta__1</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__10.html"
+                                  title='static minilzo_sys::lzo_cta__10'>lzo_cta__10</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__11.html"
+                                  title='static minilzo_sys::lzo_cta__11'>lzo_cta__11</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__12.html"
+                                  title='static minilzo_sys::lzo_cta__12'>lzo_cta__12</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__13.html"
+                                  title='static minilzo_sys::lzo_cta__13'>lzo_cta__13</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__14.html"
+                                  title='static minilzo_sys::lzo_cta__14'>lzo_cta__14</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__15.html"
+                                  title='static minilzo_sys::lzo_cta__15'>lzo_cta__15</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__16.html"
+                                  title='static minilzo_sys::lzo_cta__16'>lzo_cta__16</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__17.html"
+                                  title='static minilzo_sys::lzo_cta__17'>lzo_cta__17</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__18.html"
+                                  title='static minilzo_sys::lzo_cta__18'>lzo_cta__18</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__19.html"
+                                  title='static minilzo_sys::lzo_cta__19'>lzo_cta__19</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__2.html"
+                                  title='static minilzo_sys::lzo_cta__2'>lzo_cta__2</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__20.html"
+                                  title='static minilzo_sys::lzo_cta__20'>lzo_cta__20</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__21.html"
+                                  title='static minilzo_sys::lzo_cta__21'>lzo_cta__21</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__22.html"
+                                  title='static minilzo_sys::lzo_cta__22'>lzo_cta__22</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__23.html"
+                                  title='static minilzo_sys::lzo_cta__23'>lzo_cta__23</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__24.html"
+                                  title='static minilzo_sys::lzo_cta__24'>lzo_cta__24</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__25.html"
+                                  title='static minilzo_sys::lzo_cta__25'>lzo_cta__25</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__26.html"
+                                  title='static minilzo_sys::lzo_cta__26'>lzo_cta__26</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__27.html"
+                                  title='static minilzo_sys::lzo_cta__27'>lzo_cta__27</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__28.html"
+                                  title='static minilzo_sys::lzo_cta__28'>lzo_cta__28</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__29.html"
+                                  title='static minilzo_sys::lzo_cta__29'>lzo_cta__29</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__3.html"
+                                  title='static minilzo_sys::lzo_cta__3'>lzo_cta__3</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__30.html"
+                                  title='static minilzo_sys::lzo_cta__30'>lzo_cta__30</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__31.html"
+                                  title='static minilzo_sys::lzo_cta__31'>lzo_cta__31</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__32.html"
+                                  title='static minilzo_sys::lzo_cta__32'>lzo_cta__32</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__33.html"
+                                  title='static minilzo_sys::lzo_cta__33'>lzo_cta__33</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__34.html"
+                                  title='static minilzo_sys::lzo_cta__34'>lzo_cta__34</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__35.html"
+                                  title='static minilzo_sys::lzo_cta__35'>lzo_cta__35</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__36.html"
+                                  title='static minilzo_sys::lzo_cta__36'>lzo_cta__36</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__37.html"
+                                  title='static minilzo_sys::lzo_cta__37'>lzo_cta__37</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__38.html"
+                                  title='static minilzo_sys::lzo_cta__38'>lzo_cta__38</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__39.html"
+                                  title='static minilzo_sys::lzo_cta__39'>lzo_cta__39</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__4.html"
+                                  title='static minilzo_sys::lzo_cta__4'>lzo_cta__4</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__40.html"
+                                  title='static minilzo_sys::lzo_cta__40'>lzo_cta__40</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__41.html"
+                                  title='static minilzo_sys::lzo_cta__41'>lzo_cta__41</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__42.html"
+                                  title='static minilzo_sys::lzo_cta__42'>lzo_cta__42</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__43.html"
+                                  title='static minilzo_sys::lzo_cta__43'>lzo_cta__43</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__44.html"
+                                  title='static minilzo_sys::lzo_cta__44'>lzo_cta__44</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__45.html"
+                                  title='static minilzo_sys::lzo_cta__45'>lzo_cta__45</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__46.html"
+                                  title='static minilzo_sys::lzo_cta__46'>lzo_cta__46</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__47.html"
+                                  title='static minilzo_sys::lzo_cta__47'>lzo_cta__47</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__48.html"
+                                  title='static minilzo_sys::lzo_cta__48'>lzo_cta__48</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__49.html"
+                                  title='static minilzo_sys::lzo_cta__49'>lzo_cta__49</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__5.html"
+                                  title='static minilzo_sys::lzo_cta__5'>lzo_cta__5</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__50.html"
+                                  title='static minilzo_sys::lzo_cta__50'>lzo_cta__50</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__51.html"
+                                  title='static minilzo_sys::lzo_cta__51'>lzo_cta__51</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__52.html"
+                                  title='static minilzo_sys::lzo_cta__52'>lzo_cta__52</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__53.html"
+                                  title='static minilzo_sys::lzo_cta__53'>lzo_cta__53</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__54.html"
+                                  title='static minilzo_sys::lzo_cta__54'>lzo_cta__54</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__55.html"
+                                  title='static minilzo_sys::lzo_cta__55'>lzo_cta__55</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__6.html"
+                                  title='static minilzo_sys::lzo_cta__6'>lzo_cta__6</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__7.html"
+                                  title='static minilzo_sys::lzo_cta__7'>lzo_cta__7</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__8.html"
+                                  title='static minilzo_sys::lzo_cta__8'>lzo_cta__8</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.lzo_cta__9.html"
+                                  title='static minilzo_sys::lzo_cta__9'>lzo_cta__9</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.__lzo_align_gap.html"
+                                  title='fn minilzo_sys::__lzo_align_gap'>__lzo_align_gap</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.__lzo_init_v2.html"
+                                  title='fn minilzo_sys::__lzo_init_v2'>__lzo_init_v2</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn._lzo_config_check.html"
+                                  title='fn minilzo_sys::_lzo_config_check'>_lzo_config_check</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn._lzo_version_date.html"
+                                  title='fn minilzo_sys::_lzo_version_date'>_lzo_version_date</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn._lzo_version_string.html"
+                                  title='fn minilzo_sys::_lzo_version_string'>_lzo_version_string</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lzo1x_1_compress.html"
+                                  title='fn minilzo_sys::lzo1x_1_compress'>lzo1x_1_compress</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lzo1x_decompress.html"
+                                  title='fn minilzo_sys::lzo1x_decompress'>lzo1x_decompress</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lzo1x_decompress_safe.html"
+                                  title='fn minilzo_sys::lzo1x_decompress_safe'>lzo1x_decompress_safe</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lzo_adler32.html"
+                                  title='fn minilzo_sys::lzo_adler32'>lzo_adler32</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lzo_crc32.html"
+                                  title='fn minilzo_sys::lzo_crc32'>lzo_crc32</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lzo_get_crc32_table.html"
+                                  title='fn minilzo_sys::lzo_get_crc32_table'>lzo_get_crc32_table</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lzo_memcmp.html"
+                                  title='fn minilzo_sys::lzo_memcmp'>lzo_memcmp</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lzo_memcpy.html"
+                                  title='fn minilzo_sys::lzo_memcpy'>lzo_memcpy</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lzo_memmove.html"
+                                  title='fn minilzo_sys::lzo_memmove'>lzo_memmove</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lzo_memset.html"
+                                  title='fn minilzo_sys::lzo_memset'>lzo_memset</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lzo_version.html"
+                                  title='fn minilzo_sys::lzo_version'>lzo_version</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lzo_version_date.html"
+                                  title='fn minilzo_sys::lzo_version_date'>lzo_version_date</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.lzo_version_string.html"
+                                  title='fn minilzo_sys::lzo_version_string'>lzo_version_string</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.__lzo_pu32_u.html"
+                                  title='type minilzo_sys::__lzo_pu32_u'>__lzo_pu32_u</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.__lzo_pu_u.html"
+                                  title='type minilzo_sys::__lzo_pu_u'>__lzo_pu_u</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lzo_align_t.html"
+                                  title='type minilzo_sys::lzo_align_t'>lzo_align_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lzo_alloc_func_t.html"
+                                  title='type minilzo_sys::lzo_alloc_func_t'>lzo_alloc_func_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lzo_bool.html"
+                                  title='type minilzo_sys::lzo_bool'>lzo_bool</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lzo_callback_t.html"
+                                  title='type minilzo_sys::lzo_callback_t'>lzo_callback_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lzo_compress_dict_t.html"
+                                  title='type minilzo_sys::lzo_compress_dict_t'>lzo_compress_dict_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lzo_compress_t.html"
+                                  title='type minilzo_sys::lzo_compress_t'>lzo_compress_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lzo_decompress_dict_t.html"
+                                  title='type minilzo_sys::lzo_decompress_dict_t'>lzo_decompress_dict_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lzo_decompress_t.html"
+                                  title='type minilzo_sys::lzo_decompress_t'>lzo_decompress_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lzo_free_func_t.html"
+                                  title='type minilzo_sys::lzo_free_func_t'>lzo_free_func_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lzo_int.html"
+                                  title='type minilzo_sys::lzo_int'>lzo_int</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lzo_llong_t__.html"
+                                  title='type minilzo_sys::lzo_llong_t__'>lzo_llong_t__</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lzo_optimize_t.html"
+                                  title='type minilzo_sys::lzo_optimize_t'>lzo_optimize_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lzo_progress_func_t.html"
+                                  title='type minilzo_sys::lzo_progress_func_t'>lzo_progress_func_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lzo_uint.html"
+                                  title='type minilzo_sys::lzo_uint'>lzo_uint</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.lzo_ullong_t__.html"
+                                  title='type minilzo_sys::lzo_ullong_t__'>lzo_ullong_t__</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.max_align_t.html"
+                                  title='type minilzo_sys::max_align_t'>max_align_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ptrdiff_t.html"
+                                  title='type minilzo_sys::ptrdiff_t'>ptrdiff_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.size_t.html"
+                                  title='type minilzo_sys::size_t'>size_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.wchar_t.html"
+                                  title='type minilzo_sys::wchar_t'>wchar_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "minilzo_sys";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>
